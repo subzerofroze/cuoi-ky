@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using PlayFab;
 using PlayFab.ClientModels;
+using UnityEngine.SceneManagement;
 
 public class Login : MonoBehaviour
 {
@@ -40,7 +41,7 @@ public class Login : MonoBehaviour
 
     #region ButtonFunc
 
-    public void SignInUser()
+    public void SignUpUser()
     {
         var request = new RegisterPlayFabUserRequest
         {
@@ -53,6 +54,16 @@ public class Login : MonoBehaviour
         PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSuccess, OnError);
     }
 
+    public void LoginUser()
+    {
+        var request = new LoginWithEmailAddressRequest
+        {
+            Email = EmailLoginInput.text,
+            Password = PasswordLoginInput.text,
+        };
+        PlayFabClientAPI.LoginWithEmailAddress(request, OnLoginSuccess, OnError);
+    }
+
     private void OnError(PlayFabError Error)
     {
         MessageText.text = Error.ErrorMessage;
@@ -63,6 +74,12 @@ public class Login : MonoBehaviour
     {
         MessageText.text = "New Account Created!";
         OpenLoginPage();
+    }
+
+    private void OnLoginSuccess(LoginResult result)
+    {
+        MessageText.text = "Logging in";
+        //SceneManager.LoadScene()
     }
 
     public void OpenLoginPage()
