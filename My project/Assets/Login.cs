@@ -79,7 +79,7 @@ public class Login : MonoBehaviour
     private void OnLoginSuccess(LoginResult result)
     {
         MessageText.text = "Logging in";
-        //SceneManager.LoadScene()
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void OpenLoginPage()
