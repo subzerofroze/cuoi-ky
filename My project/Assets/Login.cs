@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using PlayFab;
+using PlayFab.ClientModels;
 
 public class Login : MonoBehaviour
 {
@@ -37,6 +39,32 @@ public class Login : MonoBehaviour
     }
 
     #region ButtonFunc
+
+    public void SignInUser()
+    {
+        var request = new RegisterPlayFabUserRequest
+        {
+            DisplayName = UsernameSignUpInput.text,
+            Email = EmailSignUpInput.text,
+            Password = PasswordSignUpInput.text,
+
+            RequireBothUsernameAndEmail = false
+        };
+        PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSuccess, OnError);
+    }
+
+    private void OnError(PlayFabError Error)
+    {
+        MessageText.text = Error.ErrorMessage;
+        Debug.Log(Error.GenerateErrorReport());
+    }
+
+    private void OnRegisterSuccess(RegisterPlayFabUserResult Result)
+    {
+        MessageText.text = "New Account Created!";
+        OpenLoginPage();
+    }
+
     public void OpenLoginPage()
     {
         LoginPage.SetActive(true);
