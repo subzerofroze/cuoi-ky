@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayButton : MonoBehaviour
+public class MenuSelector : MonoBehaviour
 {
+    public string set;
+
     void Start()
     {
 
@@ -12,6 +14,7 @@ public class PlayButton : MonoBehaviour
 
     public void OpenScene()
     {
-        SceneManager.LoadScene("Set selection");
+        SceneManager.LoadScene(set.ToString());
     }
 }
+

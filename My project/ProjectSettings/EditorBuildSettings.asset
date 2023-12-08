@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Landing page.unity
     guid: 797479bf45130bf4390106a0c084fb8e
   - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: bc35cdf2ef0285142bb50d880c001267
+  - enabled: 1
     path: Assets/Scenes/Set selection.unity
     guid: 60dc86b4df65c004aa576df8e8045827
   - enabled: 1
