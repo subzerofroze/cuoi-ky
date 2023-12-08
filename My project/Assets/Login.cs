@@ -64,6 +64,28 @@ public class Login : MonoBehaviour
         PlayFabClientAPI.LoginWithEmailAddress(request, OnLoginSuccess, OnError);
     }
 
+    public void RecoverUser()
+    {
+        var request = new SendAccountRecoveryEmailRequest
+        {
+            Email = EmailRecoveryInput.text,
+            TitleId = "7E86A",
+        };
+        PlayFabClientAPI.SendAccountRecoveryEmail(request, OnRecoverySuccess, OnErrorEmail);
+    }
+
+    private void OnErrorEmail(PlayFabError Error)
+    {
+        MessageText.text = "Invalid email";
+        Debug.Log(Error.GenerateErrorReport());
+    }
+
+    private void OnRecoverySuccess(SendAccountRecoveryEmailResult result)
+    {
+        OpenLoginPage();
+        MessageText.text = "Recovery Mail Sent";
+    }
+
     private void OnError(PlayFabError Error)
     {
         MessageText.text = Error.ErrorMessage;
