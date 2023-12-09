@@ -874,6 +874,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &817559606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 817559608}
+  - component: {fileID: 817559607}
+  m_Layer: 0
+  m_Name: LocalizationManger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &817559607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817559606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50cf2546973275f4caa0511552ee3aef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableId: 1Cjg7OFsNUFoKfdetBkaFSQFZLArGz-cSDj9rXnv6gtk-cSDj9rXnv6gtk-cSDj9rXnv6gtk-cSDj9rXnv6gtk
+  Sheets:
+  - Name: Instruction Book
+    Id: 904879611
+    TextAsset: {fileID: 0}
+  SaveFolder: {fileID: 102900000, guid: c392831e85f928548b8494fefd912562, type: 3}
+--- !u!4 &817559608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817559606}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 936.94543, y: 547.3766, z: -1.4754663}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &855964832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,6 +1704,7 @@ GameObject:
   - component: {fileID: 2000088710}
   - component: {fileID: 2000088712}
   - component: {fileID: 2000088711}
+  - component: {fileID: 2000088713}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -1677,8 +1728,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14, y: 10}
-  m_SizeDelta: {x: 1040, y: 171.8243}
+  m_AnchoredPosition: {x: -12.3429, y: 10}
+  m_SizeDelta: {x: 1739.283, y: 171.8243}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2000088711
 MonoBehaviour:
@@ -1722,6 +1773,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000088709}
   m_CullTransparentMesh: 1
+--- !u!114 &2000088713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000088709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: SetSelection
 --- !u!1 &2010937795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1734,6 +1798,7 @@ GameObject:
   - component: {fileID: 2010937798}
   - component: {fileID: 2010937797}
   - component: {fileID: 2010937799}
+  - component: {fileID: 2010937800}
   m_Layer: 5
   m_Name: TitleShade
   m_TagString: Untagged
@@ -1758,8 +1823,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25, y: 317}
-  m_SizeDelta: {x: 1040, y: 171.8243}
+  m_AnchoredPosition: {x: 25.815, y: 317}
+  m_SizeDelta: {x: 1777.4, y: 171.8243}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2010937797
 MonoBehaviour:
@@ -1815,6 +1880,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d213c495d7c158c47912dc5c2aaf7446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2010937800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010937795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: SetSelection
 --- !u!1 &2058664768
 GameObject:
   m_ObjectHideFlags: 0
@@ -1967,4 +2045,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 757271116}
   - {fileID: 1032638951}
+  - {fileID: 817559608}
   - {fileID: 1664342352}

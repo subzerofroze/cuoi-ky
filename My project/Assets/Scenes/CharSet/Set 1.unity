@@ -280,6 +280,7 @@ GameObject:
   - component: {fileID: 181902643}
   - component: {fileID: 181902645}
   - component: {fileID: 181902644}
+  - component: {fileID: 181902646}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -348,6 +349,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181902642}
   m_CullTransparentMesh: 1
+--- !u!114 &181902646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181902642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: Char.Selection
 --- !u!1 &337932484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,6 +1139,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 628880019}
   m_CullTransparentMesh: 1
+--- !u!1 &675482955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 675482957}
+  - component: {fileID: 675482956}
+  m_Layer: 0
+  m_Name: LocalizationManger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &675482956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675482955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50cf2546973275f4caa0511552ee3aef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableId: 1Cjg7OFsNUFoKfdetBkaFSQFZLArGz-cSDj9rXnv6gtk-cSDj9rXnv6gtk-cSDj9rXnv6gtk-cSDj9rXnv6gtk
+  Sheets:
+  - Name: Instruction Book
+    Id: 904879611
+    TextAsset: {fileID: 0}
+  SaveFolder: {fileID: 102900000, guid: c392831e85f928548b8494fefd912562, type: 3}
+--- !u!4 &675482957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675482955}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 936.94543, y: 547.3766, z: -1.4754663}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &811624522
 GameObject:
   m_ObjectHideFlags: 0
@@ -2981,6 +3045,7 @@ GameObject:
   - component: {fileID: 2134498256}
   - component: {fileID: 2134498255}
   - component: {fileID: 2134498257}
+  - component: {fileID: 2134498258}
   m_Layer: 5
   m_Name: TitleShade
   m_TagString: Untagged
@@ -3005,8 +3070,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15, y: 317}
-  m_SizeDelta: {x: 1536.2981, y: 171.8243}
+  m_AnchoredPosition: {x: 1.7434, y: 317}
+  m_SizeDelta: {x: 1715.2612, y: 171.8243}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2134498255
 MonoBehaviour:
@@ -3062,10 +3127,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d213c495d7c158c47912dc5c2aaf7446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2134498258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134498253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: Char.Selection
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1874872420}
   - {fileID: 1198952668}
+  - {fileID: 675482957}
   - {fileID: 468651333}

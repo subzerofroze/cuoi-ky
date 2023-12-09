@@ -6,27 +6,37 @@ using Assets.SimpleLocalization.Scripts;
 
 public class MultiLanguage : MonoBehaviour
 {
+    private void Awake()
+    {
+        // Read localization data
+        LocalizationManager.Read();
+
+        // Set the language based on PlayerPrefs
+        string savedLanguage = PlayerPrefs.GetString("language", "English");
+        LocalizationManager.Language = savedLanguage;
+
+        // Log for debugging purposes
+        Debug.Log("Current Language: " + savedLanguage);
+    }
+
     public void Language(string language)
     {
         LocalizationManager.Language = language;
         PlayerPrefs.SetString("language", language);
+
+        // Reload the scene to apply language changes
+        ReloadAllScenes();
     }
 
-    private void Awake()
+    private void ReloadAllScenes()
     {
-        LocalizationManager.Read();
+        int sceneCount = UnityEngine.SceneManagement.SceneManager.sceneCount;
 
-        switch(PlayerPrefs.GetString("language"))
+        for (int i = 0; i < sceneCount; i++)
         {
-            case "English":
-                LocalizationManager.Language = "Vietnamese";
-                break;
-
-            case "Vietnamese":
-                LocalizationManager.Language = "English";
-                break;
+            string sceneName = UnityEngine.SceneManagement.SceneManager.GetSceneAt(i).name;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
         }
     }
-
-    
 }
+
