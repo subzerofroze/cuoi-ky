@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Instruction Book.unity
     guid: ffd71631b4b13c94bbfd469659f8de59
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: bc35cdf2ef0285142bb50d880c001267
   m_configObjects: {}
