@@ -1,17 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayButton : MonoBehaviour
 {
-    void Start()
-    {
+    public CoinManager coinManager;
 
-    }
-
-    public void OpenScene()
+    public void OnClickPlayButton()
     {
-        SceneManager.LoadScene("Set selection");
+        if (coinManager.currentCoins >= 5)
+        {
+            // Load the "Set Selection" scene
+            SceneManager.LoadScene("Set Selection");
+        }
+        else
+        {
+            // Display a message or take other actions indicating that the player needs more coins
+            Debug.Log("Not enough coins to play. Earn more coins!");
+        }
     }
 }

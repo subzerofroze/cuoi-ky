@@ -427,6 +427,7 @@ GameObject:
   - component: {fileID: 221434101}
   - component: {fileID: 221434103}
   - component: {fileID: 221434102}
+  - component: {fileID: 221434104}
   m_Layer: 5
   m_Name: Label
   m_TagString: Untagged
@@ -495,6 +496,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 221434100}
   m_CullTransparentMesh: 1
+--- !u!114 &221434104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221434100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: Settings.Sound
 --- !u!1 &232030577
 GameObject:
   m_ObjectHideFlags: 0
@@ -953,6 +967,7 @@ GameObject:
   m_Component:
   - component: {fileID: 464357640}
   - component: {fileID: 464357639}
+  - component: {fileID: 464357641}
   m_Layer: 0
   m_Name: SceneManagement
   m_TagString: Untagged
@@ -987,6 +1002,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &464357641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464357638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc6cfbe729ef279409044240e6e31b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolutionDropdown: {fileID: 0}
+  fullscreenToggle: {fileID: 0}
 --- !u!1 &484808885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1681,14 +1710,26 @@ MonoBehaviour:
   m_Options:
     m_Options:
     - m_Text: 1920x1080
-      m_Image: {fileID: 0}
+      m_Image: {fileID: 21300000, guid: 1376f9cd779f8624daca005e6ad15ffa, type: 3}
     - m_Text: 1280x720
-      m_Image: {fileID: 0}
+      m_Image: {fileID: 21300000, guid: 1376f9cd779f8624daca005e6ad15ffa, type: 3}
     - m_Text: 960x540
-      m_Image: {fileID: 0}
+      m_Image: {fileID: 21300000, guid: 1376f9cd779f8624daca005e6ad15ffa, type: 3}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1010520973}
+        m_TargetAssemblyTypeName: ResolutionManager, Assembly-CSharp
+        m_MethodName: OnResolutionDropdownValueChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &1010520971
 MonoBehaviour:
@@ -1741,6 +1782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolutionDropdown: {fileID: 1010520970}
+  fullscreenToggle: {fileID: 2146857974}
 --- !u!1 &1015923215
 GameObject:
   m_ObjectHideFlags: 0
@@ -2454,8 +2496,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39, y: -218.89508}
-  m_SizeDelta: {x: 336.4573, y: 63.0857}
+  m_AnchoredPosition: {x: 12.249901, y: -218.89508}
+  m_SizeDelta: {x: 523.7074, y: 63.0857}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1137986123
 MonoBehaviour:
@@ -3461,6 +3503,7 @@ GameObject:
   - component: {fileID: 1728584052}
   - component: {fileID: 1728584054}
   - component: {fileID: 1728584053}
+  - component: {fileID: 1728584055}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -3529,6 +3572,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728584051}
   m_CullTransparentMesh: 1
+--- !u!114 &1728584055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728584051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: Settings.Exit
 --- !u!1 &1742301028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3990,9 +4046,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2146857975}
-        m_TargetAssemblyTypeName: FullScreen, Assembly-CSharp
-        m_MethodName: SetFullscreen
-        m_Mode: 0
+        m_TargetAssemblyTypeName: ResolutionManager, Assembly-CSharp
+        m_MethodName: OnFullscreenToggleValueChanged
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4011,9 +4067,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2146857972}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7800ff83bf841945b6cd0a0360a37fc, type: 3}
+  m_Script: {fileID: 11500000, guid: dc6cfbe729ef279409044240e6e31b80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resolutionDropdown: {fileID: 1010520970}
+  fullscreenToggle: {fileID: 2146857974}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

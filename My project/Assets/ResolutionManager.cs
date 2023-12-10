@@ -1,12 +1,17 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class ResolutionManager : MonoBehaviour
 {
     public Dropdown resolutionDropdown;
+    public Toggle fullscreenToggle;
 
-    void Start()
+    private void Start()
     {
+        // Populate the dropdown with resolution options
+        PopulateDropdown();
+
         // Load the saved resolution setting or set a default value
         int savedIndex = PlayerPrefs.GetInt("ResolutionIndex", 0);
         resolutionDropdown.value = savedIndex;
@@ -14,8 +19,17 @@ public class ResolutionManager : MonoBehaviour
         // Apply the saved resolution
         ApplyResolution();
 
-        // Make the GameObject persist across scenes
-        DontDestroyOnLoad(gameObject);
+        // Set the initial fullscreen state
+        fullscreenToggle.isOn = Screen.fullScreen;
+    }
+
+    private void PopulateDropdown()
+    {
+        // Add resolution options to the dropdown
+        resolutionDropdown.ClearOptions();
+
+        // Add resolution options directly
+        resolutionDropdown.AddOptions(new List<string> { "1920x1080", "1280x720", "960x540" }); // Add more resolutions as needed
     }
 
     public void OnResolutionDropdownValueChanged()
@@ -25,6 +39,18 @@ public class ResolutionManager : MonoBehaviour
 
         // Apply the new resolution
         ApplyResolution();
+    }
+
+    public void OnFullscreenToggleValueChanged()
+    {
+        // Toggle fullscreen mode
+        Screen.fullScreen = fullscreenToggle.isOn;
+
+        // If not in fullscreen, apply the selected resolution
+        if (!fullscreenToggle.isOn)
+        {
+            ApplyResolution();
+        }
     }
 
     private void ApplyResolution()
@@ -41,7 +67,7 @@ public class ResolutionManager : MonoBehaviour
             int height = int.Parse(resolutionValues[1]);
 
             // Set the selected resolution
-            Screen.SetResolution(width, height, Screen.fullScreen);
+            Screen.SetResolution(width, height, fullscreenToggle.isOn);
         }
         else
         {
