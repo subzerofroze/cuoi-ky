@@ -20,4 +20,10 @@ MonoBehaviour:
   - Name: Instruction Book
     Id: 596117317
     TextAsset: {fileID: 4900000, guid: 5f033704a43c66347a33b193e23a1359, type: 3}
+  - Name: Set Selection
+    Id: 904879611
+    TextAsset: {fileID: 4900000, guid: 291ec1c3ad482f0498d222d629f5d0b4, type: 3}
+  - Name: Char Selection
+    Id: 2135041477
+    TextAsset: {fileID: 4900000, guid: 5713b42704c3a6344847fb1787d103ff, type: 3}
   SaveFolder: {fileID: 102900000, guid: c392831e85f928548b8494fefd912562, type: 3}
