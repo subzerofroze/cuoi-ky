@@ -18,7 +18,8 @@ public class CoinManager : MonoBehaviour
 
     void UpdateUI()
     {
-        coinText.text = "Coins: " + currentCoins.ToString();
+        Debug.Log("Current Coins: " + currentCoins);
+        coinText.text = currentCoins.ToString();
     }
 
     void CheckMainGameAccess()

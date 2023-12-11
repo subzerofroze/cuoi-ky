@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 344707359}
   - component: {fileID: 344707362}
   - component: {fileID: 344707361}
-  - component: {fileID: 344707360}
+  - component: {fileID: 344707363}
   m_Layer: 5
   m_Name: CoinText
   m_TagString: Untagged
@@ -161,22 +161,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50.57959, y: -2.5809}
   m_SizeDelta: {x: 133.1591, y: 82.8383}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &344707360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 344707358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb2119c68b9826f4f8095b41e9f8de0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingCoins: 5
-  currentCoins: 5
-  coinText: {fileID: 344707361}
-  player: {fileID: 947338787}
 --- !u!114 &344707361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,6 +203,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344707358}
   m_CullTransparentMesh: 1
+--- !u!114 &344707363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344707358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb2119c68b9826f4f8095b41e9f8de0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingCoins: 5
+  currentCoins: 0
+  coinText: {fileID: 344707361}
+  player: {fileID: 0}
 --- !u!1 &395358264
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,7 +364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dca3035467408da42bddeb722218c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinManager: {fileID: 344707360}
+  coinManager: {fileID: 344707363}
 --- !u!1 &486666178
 GameObject:
   m_ObjectHideFlags: 0

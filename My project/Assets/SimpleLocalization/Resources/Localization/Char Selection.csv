@@ -1,2 +1,7 @@
 Key,English,Vietnamese
 Char.Selection,Select your character,Hãy chọn nhân vật
+Char.Name,Character's Name,Tên nhân vật
+Char.NameEnter,Enter Name,Nhập tên
+Input.Coin,Betting Coins,Xu đặt cược
+Input.CoinEnter,Enter Coin Number,Nhập số xu
+StartButton,Start,Bắt đầu
