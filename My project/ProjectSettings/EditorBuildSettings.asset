@@ -27,14 +27,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Set 1 Main Game.unity
     guid: 12791d89a24336540bebd05938001718
   - enabled: 0
+    path: Assets/Scenes/Set 2 MainGame.unity
+    guid: 1ecb18bd55da17341994be1bc048f370
+  - enabled: 0
+    path: Assets/Scenes/Set 3 MainGame.unity
+    guid: fc2c884dd7769f44d9e64c8a36a4ad3d
+  - enabled: 0
+    path: Assets/Scenes/CharSet/Set 2.unity
+    guid: 8cb6cf9ea57fa6d4da766ecf0f6da2e0
+  - enabled: 0
     path: Assets/Scenes/Set selection.unity
     guid: 60dc86b4df65c004aa576df8e8045827
   - enabled: 0
     path: Assets/Scenes/CharSet/Set 1.unity
     guid: 26768254b512fed42942c1a92fa9fcae
-  - enabled: 0
-    path: Assets/Scenes/CharSet/Set 2.unity
-    guid: 8cb6cf9ea57fa6d4da766ecf0f6da2e0
   - enabled: 0
     path: Assets/Scenes/CharSet/Set 3.unity
     guid: 795a10e666262064695dea71b8882d1f
