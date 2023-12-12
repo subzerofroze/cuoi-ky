@@ -5,3 +5,7 @@ Char.NameEnter,Enter Name,Nhập tên
 Input.Coin,Betting Coins,Xu đặt cược
 Input.CoinEnter,Enter Coin Number,Nhập số xu
 StartButton,Start,Bắt đầu
+Race.Size,Race Size,Cỡ đường đua
+Size.Long,Long,Dài
+Size.Average,Average,Trung Bình
+Size.Short,Short,Ngắn
