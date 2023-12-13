@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -14,7 +15,6 @@ public class LogicScript : MonoBehaviour
         playerScore = playerScore + scoreToAdd;
         scoreText.text = playerScore.ToString();
     }
-
     public void restartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -25,3 +25,4 @@ public class LogicScript : MonoBehaviour
         gameOverScreen.SetActive(true);
     }
 }
+
