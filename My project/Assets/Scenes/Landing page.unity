@@ -123,6 +123,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &18057287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 18057289}
+  - component: {fileID: 18057288}
+  m_Layer: 0
+  m_Name: Coins
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &18057288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18057287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e8252eac2b6e5641865dea8753d90d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinsText: {fileID: 344707361}
+--- !u!4 &18057289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18057287}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 552.5057, y: 303.18945, z: 2.0534263}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &344707358
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,7 +179,6 @@ GameObject:
   - component: {fileID: 344707359}
   - component: {fileID: 344707362}
   - component: {fileID: 344707361}
-  - component: {fileID: 344707363}
   m_Layer: 5
   m_Name: CoinText
   m_TagString: Untagged
@@ -194,7 +238,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &344707362
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -203,22 +247,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344707358}
   m_CullTransparentMesh: 1
---- !u!114 &344707363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 344707358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb2119c68b9826f4f8095b41e9f8de0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingCoins: 5
-  currentCoins: 0
-  coinText: {fileID: 344707361}
-  player: {fileID: 0}
 --- !u!1 &395358264
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,9 +330,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 395358269}
-        m_TargetAssemblyTypeName: PlayButton, Assembly-CSharp
-        m_MethodName: OnClickPlayButton
+      - m_Target: {fileID: 18057288}
+        m_TargetAssemblyTypeName: VirtualCurrencyManager, Assembly-CSharp
+        m_MethodName: PlayMainGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -364,7 +392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dca3035467408da42bddeb722218c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinManager: {fileID: 344707363}
+  coinManager: {fileID: 0}
 --- !u!1 &486666178
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,6 +833,7 @@ GameObject:
   - component: {fileID: 809578440}
   - component: {fileID: 809578439}
   - component: {fileID: 809578438}
+  - component: {fileID: 809578442}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -902,6 +931,29 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &809578442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809578437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17065ad9de32ac14792d7ad9a1d1ef04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MessageText: {fileID: 0}
+  FaceID: {fileID: 0}
+  EmailLoginInput: {fileID: 0}
+  PasswordLoginInput: {fileID: 0}
+  LoginPage: {fileID: 0}
+  UsernameSignUpInput: {fileID: 0}
+  EmailSignUpInput: {fileID: 0}
+  PasswordSignUpInput: {fileID: 0}
+  SignUpPage: {fileID: 0}
+  EmailRecoveryInput: {fileID: 0}
+  RecoverPage: {fileID: 0}
 --- !u!1 &893781220
 GameObject:
   m_ObjectHideFlags: 0
@@ -1612,3 +1664,4 @@ SceneRoots:
   - {fileID: 1880069316}
   - {fileID: 809578441}
   - {fileID: 611966468}
+  - {fileID: 18057289}
