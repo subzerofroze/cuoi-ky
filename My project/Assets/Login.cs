@@ -5,9 +5,10 @@ using TMPro;
 using PlayFab;
 using PlayFab.ClientModels;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 public class Login : MonoBehaviour
 {
+
     [SerializeField] TextMeshProUGUI MessageText;
 
     [Header("Face ID")]
@@ -27,10 +28,11 @@ public class Login : MonoBehaviour
     [Header("SignUp")]
     [SerializeField] TMP_InputField EmailRecoveryInput;
     [SerializeField] GameObject RecoverPage;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
