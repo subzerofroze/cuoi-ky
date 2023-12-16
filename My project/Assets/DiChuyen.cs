@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class DiChuyen : MonoBehaviour
 {
     public Char1 char1;
@@ -12,6 +13,8 @@ public class DiChuyen : MonoBehaviour
     public Char5 char5;
 
     public Text addtext;
+
+    private bool timesArray = false;
 
     public float[] finishTimes;
 
@@ -23,7 +26,6 @@ public class DiChuyen : MonoBehaviour
         char3 = GameObject.FindGameObjectWithTag("Char3").GetComponent<Char3>();
         char4 = GameObject.FindGameObjectWithTag("Char4").GetComponent<Char4>();
         char5 = GameObject.FindGameObjectWithTag("Char5").GetComponent<Char5>();
-
     }
 
     // Update is called once per frame
@@ -48,8 +50,69 @@ public class DiChuyen : MonoBehaviour
         // Sắp xếp mảng tăng dần
         System.Array.Sort(finishTimes);
 
+        timesArray = true;
+
     }
 
+
+    public int Ranking(MonoBehaviour character)
+    {
+        if (timesArray)
+        {
+            float finishTime = 0;
+
+            // Kiểm tra nếu đối tượng là Char1 thì gọi FinishTime
+            if (character is Char1 char1Instance)
+            {
+                finishTime = char1Instance.FinishTime();
+                if (finishTimes[0] == finishTime)
+                {
+                    return 1;
+                }
+                return 0;
+            }
+            // Kiểm tra nếu đối tượng là Char2 thì gọi FinishTime
+            else if (character is Char2 char2Instance)
+            {
+                finishTime = char2Instance.FinishTime();
+                if (finishTimes[0] == finishTime)
+                {
+                    return 1;
+                }
+                return 0;
+            }
+            else if (character is Char3 char3Instance)
+            {
+                finishTime = char3Instance.FinishTime();
+                if (finishTimes[0] == finishTime)
+                {
+                    return 1;
+                }
+                return 0;
+            }
+            else if (character is Char4 char4Instance)
+            {
+                finishTime = char4Instance.FinishTime();
+                if (finishTimes[0] == finishTime)
+                {
+                    return 1;
+                }
+                return 0;
+            }
+            else if (character is Char5 char5Instance)
+            {
+                finishTime = char5Instance.FinishTime();
+                if (finishTimes[0] == finishTime)
+                {
+                    return 1;
+                }
+                return 0;
+            }
+        }
+        return 0;
+    }
+
+   
    
     /*
     public void CurrentRanking()
