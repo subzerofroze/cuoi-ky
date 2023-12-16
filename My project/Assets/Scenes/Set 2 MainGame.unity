@@ -855,6 +855,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44f2b285bcc2c794b930a7c8cf5cdeac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diChuyen: {fileID: 284526021}
+  animator: {fileID: 1283987107}
   startLine: {fileID: 578545265}
   finishLine: {fileID: 360534517}
   Rchar3: {fileID: 1283987108}
@@ -1053,6 +1055,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f5364f6075f194b896c23a3c8aced9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diChuyen: {fileID: 284526021}
+  animator: {fileID: 1492363332}
   startLine: {fileID: 578545265}
   finishLine: {fileID: 360534517}
   Rchar1: {fileID: 1492363328}
@@ -1326,6 +1330,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed4604d0920ba5448fdee60ae0fa7d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diChuyen: {fileID: 284526021}
+  animator: {fileID: 1888206241}
   startLine: {fileID: 578545265}
   finishLine: {fileID: 360534517}
   Rchar5: {fileID: 1888206242}
@@ -1524,6 +1530,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21542c2629ce9b74e9ec3ec4c145c80b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diChuyen: {fileID: 284526021}
+  animator: {fileID: 1963713292}
   startLine: {fileID: 578545265}
   finishLine: {fileID: 360534517}
   Rchar2: {fileID: 1963713293}
@@ -1826,6 +1834,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd76b41327b53374092031448582d1ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diChuyen: {fileID: 284526021}
+  animator: {fileID: 2115905401}
   startLine: {fileID: 578545265}
   finishLine: {fileID: 360534517}
   Rchar4: {fileID: 2115905402}
