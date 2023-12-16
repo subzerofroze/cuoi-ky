@@ -426,12 +426,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f5364f6075f194b896c23a3c8aced9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diChuyen: {fileID: 2048465268}
   startLine: {fileID: 937718917}
   finishLine: {fileID: 1314821319}
   Rchar1: {fileID: 385464092}
   Cchar1: {fileID: 385464090}
-  minSpeed: 50
-  maxSpeed: 250
+  minSpeed: 125
+  maxSpeed: 150
+  currentSpeed: 0
+  randomSpeed: 0
+  distanceTraveled: 0
+  hasEncounteredAnimation: 0
+  elapsedTime: 0
+  animator: {fileID: 385464093}
   direction: {x: 1, y: 0}
   reversed: 0
   movingRight: 1
@@ -812,6 +819,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd76b41327b53374092031448582d1ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diChuyen: {fileID: 2048465268}
+  animator: {fileID: 1128876246}
   startLine: {fileID: 937718917}
   finishLine: {fileID: 1314821319}
   Rchar4: {fileID: 1128876245}
@@ -887,7 +896,7 @@ GameObject:
   - component: {fileID: 1314821320}
   m_Layer: 5
   m_Name: FinishLine
-  m_TagString: Untagged
+  m_TagString: FinishLine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1119,6 +1128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21542c2629ce9b74e9ec3ec4c145c80b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diChuyen: {fileID: 2048465268}
+  animator: {fileID: 1565155380}
   startLine: {fileID: 937718917}
   finishLine: {fileID: 1314821319}
   Rchar2: {fileID: 1565155379}
@@ -1385,6 +1396,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44f2b285bcc2c794b930a7c8cf5cdeac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diChuyen: {fileID: 2048465268}
+  animator: {fileID: 1880750900}
   startLine: {fileID: 937718917}
   finishLine: {fileID: 1314821319}
   Rchar3: {fileID: 1880750899}
@@ -1583,6 +1596,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed4604d0920ba5448fdee60ae0fa7d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diChuyen: {fileID: 2048465268}
+  animator: {fileID: 1989929030}
   startLine: {fileID: 937718917}
   finishLine: {fileID: 1314821319}
   Rchar5: {fileID: 1989929029}
@@ -1662,7 +1677,7 @@ GameObject:
   - component: {fileID: 2048465268}
   m_Layer: 5
   m_Name: Set 1
-  m_TagString: Untagged
+  m_TagString: Set1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
