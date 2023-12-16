@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 400237954}
   m_Layer: 5
   m_Name: Set 5
-  m_TagString: Untagged
+  m_TagString: Set1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -395,7 +395,7 @@ RectTransform:
   m_GameObject: {fileID: 611176638}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 50, y: 1000, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 400237953}
@@ -464,7 +464,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5, y: 0}
+  m_Offset: {x: -0.2609005, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -530,12 +530,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd76b41327b53374092031448582d1ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diChuyen: {fileID: 400237954}
   startLine: {fileID: 908089860}
   finishLine: {fileID: 611176639}
   Rchar4: {fileID: 703723594}
   Cchar4: {fileID: 703723595}
-  minSpeed: 50
-  maxSpeed: 250
+  animator: {fileID: 703723593}
+  minSpeed: 125
+  maxSpeed: 150
+  currentSpeed: 0
+  randomSpeed: 0
+  distanceTraveled: 0
+  hasEncounteredAnimation: 0
+  hasEncounteredAnimation2: 0
+  elapsedTime: 0
+  elapsedTime2: 0
   direction: {x: 1, y: 0}
   reversed: 0
   movingRight: 1
@@ -702,7 +711,7 @@ RectTransform:
   m_GameObject: {fileID: 908089859}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 50, y: 1000, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 400237953}
@@ -771,7 +780,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5, y: 0}
+  m_Offset: {x: -0.45652664, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1033,12 +1042,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21542c2629ce9b74e9ec3ec4c145c80b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diChuyen: {fileID: 400237954}
   startLine: {fileID: 908089860}
   finishLine: {fileID: 611176639}
   Rchar2: {fileID: 1461160913}
   Cchar2: {fileID: 1461160914}
-  minSpeed: 50
-  maxSpeed: 250
+  animator: {fileID: 1461160912}
+  minSpeed: 125
+  maxSpeed: 150
+  currentSpeed: 0
+  randomSpeed: 0
+  distanceTraveled: 0
+  hasEncounteredAnimation: 0
+  hasEncounteredAnimation2: 0
+  elapsedTime: 0
+  elapsedTime2: 0
   direction: {x: 1, y: 0}
   reversed: 0
   movingRight: 1
@@ -1231,12 +1249,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f5364f6075f194b896c23a3c8aced9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diChuyen: {fileID: 400237954}
   startLine: {fileID: 908089860}
   finishLine: {fileID: 611176639}
   Rchar1: {fileID: 1569283115}
   Cchar1: {fileID: 1569283116}
-  minSpeed: 50
-  maxSpeed: 250
+  animator: {fileID: 1569283114}
+  minSpeed: 125
+  maxSpeed: 150
+  currentSpeed: 0
+  randomSpeed: 0
+  distanceTraveled: 0
+  hasEncounteredAnimation: 0
+  hasEncounteredAnimation2: 0
+  elapsedTime: 0
+  elapsedTime2: 0
   direction: {x: 1, y: 0}
   reversed: 0
   movingRight: 1
@@ -1429,12 +1456,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44f2b285bcc2c794b930a7c8cf5cdeac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diChuyen: {fileID: 400237954}
   startLine: {fileID: 908089860}
   finishLine: {fileID: 611176639}
   Rchar3: {fileID: 1666393578}
   Cchar3: {fileID: 1666393579}
-  minSpeed: 50
-  maxSpeed: 250
+  animator: {fileID: 1666393577}
+  minSpeed: 125
+  maxSpeed: 150
+  currentSpeed: 0
+  randomSpeed: 0
+  distanceTraveled: 0
+  hasEncounteredAnimation: 0
+  hasEncounteredAnimation2: 0
+  elapsedTime: 0
+  elapsedTime2: 0
   direction: {x: 1, y: 0}
   reversed: 0
   movingRight: 1
@@ -1627,12 +1663,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed4604d0920ba5448fdee60ae0fa7d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diChuyen: {fileID: 400237954}
   startLine: {fileID: 908089860}
   finishLine: {fileID: 611176639}
   Rchar5: {fileID: 2023637317}
   Cchar5: {fileID: 2023637318}
-  minSpeed: 50
-  maxSpeed: 250
+  animator: {fileID: 2023637316}
+  minSpeed: 125
+  maxSpeed: 150
+  currentSpeed: 0
+  randomSpeed: 0
+  distanceTraveled: 0
+  hasEncounteredAnimation: 0
+  hasEncounteredAnimation2: 0
+  elapsedTime: 0
+  elapsedTime2: 0
   direction: {x: 1, y: 0}
   reversed: 0
   movingRight: 1

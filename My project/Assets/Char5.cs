@@ -142,7 +142,7 @@ public class Char5 : MonoBehaviour
     // Update is called once per frame
 
     // Ham bua them vao
-    private IEnumerator EncounterAnimation()
+    public IEnumerator EncounterAnimation()
     {
         // Mark that the character has encountered an animation
         hasEncounteredAnimation = true;
@@ -151,7 +151,7 @@ public class Char5 : MonoBehaviour
 
         int selectedAnimation;
 
-        if (randomValue <= 90) // 90% chance (4/5) for each case 1-5
+        if (randomValue <= 95) // 90% chance (4/5) for each case 1-5
         {
             selectedAnimation = UnityEngine.Random.Range(1, 6);
         }
@@ -246,7 +246,7 @@ public class Char5 : MonoBehaviour
         {
             elapsedTime2 += Time.deltaTime;
 
-            if (elapsedTime2 >= 25f)
+            if (elapsedTime2 >= 28f)
             {
                 hasEncounteredAnimation2 = true;
                 int randomValue2 = UnityEngine.Random.Range(1, 101);
@@ -257,7 +257,7 @@ public class Char5 : MonoBehaviour
                     diChuyen.addtext.text = GetName() + " teleport to finished line.";
                     Transform Char5transform = transform;
                     Vector2 Char5position = Char5transform.position;
-                    Char5position.x = finishLine.position.x; //Nhảy đến vạch đích và dừng chuyển động
+                    Char5position.x = finishLine.position.x - 25f; //Nhảy đến vạch đích và dừng chuyển động
                     Rchar5.position = Char5position;
                     StopMovement(Rchar5);
                 }

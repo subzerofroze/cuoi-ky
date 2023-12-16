@@ -65,14 +65,14 @@ AnimatorController:
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_DefaultBool: 1
+    m_Controller: {fileID: 0}
   - m_Name: Stop
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -150,10 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de68f89ecb106554a935eef745d93e6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeight: 1
-  jumpDuration: 1
   elapsedTime: 0
-  initialPosition: {x: 0, y: 0}
   JumpCurve:
     serializedVersion: 2
     m_Curve:
@@ -178,3 +175,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  jumpHeight: 1
+  jumpDuration: 1
+  jumpStartTime: 0
