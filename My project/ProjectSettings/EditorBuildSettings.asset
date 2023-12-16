@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Login.unity
     guid: f2ef388f707d77c41bc5614d5aab6bf0
   - enabled: 1
@@ -17,16 +17,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Instruction Book.unity
     guid: ffd71631b4b13c94bbfd469659f8de59
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Minigame.unity
     guid: de867d41b572a6d4691bdddd2932764b
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Set 1 Main Game.unity
     guid: 12791d89a24336540bebd05938001718
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Set 4 Main Game.unity
     guid: 1ecb18bd55da17341994be1bc048f370
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Set 5 Main Game.unity
     guid: fc2c884dd7769f44d9e64c8a36a4ad3d
   - enabled: 1
