@@ -12,6 +12,8 @@ public class Char1 : MonoBehaviour
     public Rigidbody2D Rchar1;
     public BoxCollider2D Cchar1;
 
+    public Animator animator;
+
     public float minSpeed = 125f;
     public float maxSpeed = 150f;
     //phan them vao
@@ -23,8 +25,6 @@ public class Char1 : MonoBehaviour
 
     public float elapsedTime = 0f;
     public float elapsedTime2 = 0f;
-
-    public Animator animator;
 
     public Vector2 direction = Vector2.right;
     public bool reversed = false; // Đánh dấu hướng di chuyển đảo ngược
@@ -187,11 +187,11 @@ public class Char1 : MonoBehaviour
                 break;
             case 4:
                 Debug.Log("Teleport forward 10 meters.");
-                diChuyen.addtext.text = GetName() + " move forward 10 meters.";
+                diChuyen.addtext.text = GetName() + " move forward 3 meters.";
                 Transform Char1transform = transform;
                 Vector2 Char1position = Char1transform.position;
                 float xPosition = Char1position.x;
-                distanceTraveled += 150f; // Teleport forward by 10 meters
+                distanceTraveled += 150f; // Teleport forward by 3 meters
                 Char1position.x = xPosition + distanceTraveled;
                 Rchar1.position = Char1position; // Update the character position
                 MoveCharacter(Rchar1); // Start the race again
@@ -199,11 +199,11 @@ public class Char1 : MonoBehaviour
 
             case 5:
                 Debug.Log("Teleport backward 10 meters.");
-                diChuyen.addtext.text = GetName() + " move backward 10 meters.";
+                diChuyen.addtext.text = GetName() + " move backward 3 meters.";
                 Char1transform = transform;
                 Char1position = Char1transform.position;
                 xPosition = Char1position.x;
-                distanceTraveled -= 150f; // Teleport backward by 10 meters
+                distanceTraveled -= 150f; // Teleport backward by 3 meters
                 Char1position.x = xPosition + distanceTraveled;
                 Rchar1.position = Char1position; // Update the character position
                 MoveCharacter(Rchar1); // Start the race again
@@ -257,7 +257,7 @@ public class Char1 : MonoBehaviour
                     diChuyen.addtext.text = GetName() + " teleport to finished line.";
                     Transform Char1transform = transform;
                     Vector2 Char1position = Char1transform.position;
-                    Char1position.x = finishLine.position.x;
+                    Char1position.x = finishLine.position.x; //Nhảy đến vạch đích và dừng chuyển động
                     Rchar1.position = Char1position;
                     StopMovement(Rchar1);
                 }
