@@ -431,14 +431,16 @@ MonoBehaviour:
   finishLine: {fileID: 1314821319}
   Rchar1: {fileID: 385464092}
   Cchar1: {fileID: 385464090}
+  animator: {fileID: 385464093}
   minSpeed: 125
   maxSpeed: 150
   currentSpeed: 0
   randomSpeed: 0
   distanceTraveled: 0
   hasEncounteredAnimation: 0
+  hasEncounteredAnimation2: 0
   elapsedTime: 0
-  animator: {fileID: 385464093}
+  elapsedTime2: 0
   direction: {x: 1, y: 0}
   reversed: 0
   movingRight: 1
@@ -820,13 +822,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diChuyen: {fileID: 2048465268}
-  animator: {fileID: 1128876246}
   startLine: {fileID: 937718917}
   finishLine: {fileID: 1314821319}
   Rchar4: {fileID: 1128876245}
   Cchar4: {fileID: 1128876241}
-  minSpeed: 50
-  maxSpeed: 250
+  animator: {fileID: 1128876246}
+  minSpeed: 125
+  maxSpeed: 150
+  currentSpeed: 0
+  randomSpeed: 0
+  distanceTraveled: 0
+  hasEncounteredAnimation: 0
+  hasEncounteredAnimation2: 0
+  elapsedTime: 0
+  elapsedTime2: 0
   direction: {x: 1, y: 0}
   reversed: 0
   movingRight: 1
@@ -1129,13 +1138,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diChuyen: {fileID: 2048465268}
-  animator: {fileID: 1565155380}
   startLine: {fileID: 937718917}
   finishLine: {fileID: 1314821319}
   Rchar2: {fileID: 1565155379}
   Cchar2: {fileID: 1565155377}
-  minSpeed: 50
-  maxSpeed: 250
+  animator: {fileID: 1565155380}
+  minSpeed: 125
+  maxSpeed: 150
+  currentSpeed: 0
+  randomSpeed: 0
+  distanceTraveled: 0
+  hasEncounteredAnimation: 0
+  hasEncounteredAnimation2: 0
+  elapsedTime: 0
+  elapsedTime2: 0
   direction: {x: 1, y: 0}
   reversed: 0
   movingRight: 1
@@ -1397,13 +1413,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diChuyen: {fileID: 2048465268}
-  animator: {fileID: 1880750900}
   startLine: {fileID: 937718917}
   finishLine: {fileID: 1314821319}
   Rchar3: {fileID: 1880750899}
   Cchar3: {fileID: 1880750895}
-  minSpeed: 50
-  maxSpeed: 250
+  animator: {fileID: 1880750900}
+  minSpeed: 125
+  maxSpeed: 150
+  currentSpeed: 0
+  randomSpeed: 0
+  distanceTraveled: 0
+  hasEncounteredAnimation: 0
+  hasEncounteredAnimation2: 0
+  elapsedTime: 0
+  elapsedTime2: 0
   direction: {x: 1, y: 0}
   reversed: 0
   movingRight: 1
@@ -1597,13 +1620,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diChuyen: {fileID: 2048465268}
-  animator: {fileID: 1989929030}
   startLine: {fileID: 937718917}
   finishLine: {fileID: 1314821319}
   Rchar5: {fileID: 1989929029}
   Cchar5: {fileID: 1989929025}
-  minSpeed: 50
-  maxSpeed: 250
+  animator: {fileID: 1989929030}
+  minSpeed: 125
+  maxSpeed: 150
+  currentSpeed: 0
+  randomSpeed: 0
+  distanceTraveled: 0
+  hasEncounteredAnimation: 0
+  hasEncounteredAnimation2: 0
+  elapsedTime: 0
+  elapsedTime2: 0
   direction: {x: 1, y: 0}
   reversed: 0
   movingRight: 1
