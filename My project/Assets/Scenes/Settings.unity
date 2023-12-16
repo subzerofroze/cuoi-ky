@@ -523,7 +523,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sound
+  m_Text: Mute
 --- !u!222 &221434103
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1430,7 +1430,7 @@ GameObject:
   - component: {fileID: 664993820}
   - component: {fileID: 664993821}
   m_Layer: 5
-  m_Name: Sound
+  m_Name: Mute
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1505,7 +1505,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!114 &664993821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3124,6 +3124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 1178204474}
+  muteToggle: {fileID: 664993820}
   audioManager: {fileID: 383794731}
 --- !u!1 &1238718483
 GameObject:
