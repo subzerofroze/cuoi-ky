@@ -190,6 +190,7 @@ MonoBehaviour:
   Rchar1: {fileID: 42476615}
   Cchar1: {fileID: 42476616}
   animator: {fileID: 42476618}
+  addtext: {fileID: 182630076}
   minSpeed: 125
   maxSpeed: 150
   currentSpeed: 0
@@ -560,6 +561,7 @@ MonoBehaviour:
   Rchar5: {fileID: 529536281}
   Cchar5: {fileID: 529536282}
   animator: {fileID: 529536285}
+  addtext: {fileID: 182630076}
   minSpeed: 125
   maxSpeed: 150
   currentSpeed: 0
@@ -767,6 +769,7 @@ MonoBehaviour:
   Rchar2: {fileID: 869837359}
   Cchar2: {fileID: 869837360}
   animator: {fileID: 869837363}
+  addtext: {fileID: 182630076}
   minSpeed: 125
   maxSpeed: 150
   currentSpeed: 0
@@ -1430,6 +1433,7 @@ MonoBehaviour:
   Rchar4: {fileID: 1454942286}
   Cchar4: {fileID: 1454942287}
   animator: {fileID: 1454942290}
+  addtext: {fileID: 182630076}
   minSpeed: 125
   maxSpeed: 150
   currentSpeed: 0
@@ -1712,6 +1716,7 @@ MonoBehaviour:
   Rchar3: {fileID: 1969650070}
   Cchar3: {fileID: 1969650071}
   animator: {fileID: 1969650074}
+  addtext: {fileID: 182630076}
   minSpeed: 125
   maxSpeed: 150
   currentSpeed: 0
