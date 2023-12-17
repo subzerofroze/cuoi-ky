@@ -728,7 +728,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 436010081}
         m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
-        m_MethodName: SelectCharacter
+        m_MethodName: GoToNextScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1067,7 +1067,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 539928372}
         m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
-        m_MethodName: SelectCharacter
+        m_MethodName: GoToNextScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1789,7 +1789,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1256555122}
         m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
-        m_MethodName: SelectCharacter
+        m_MethodName: GoToNextScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2235,7 +2235,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1382081800}
         m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
-        m_MethodName: SelectCharacter
+        m_MethodName: GoToNextScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2381,7 +2381,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1470665248}
         m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
-        m_MethodName: SelectCharacter
+        m_MethodName: GoToNextScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

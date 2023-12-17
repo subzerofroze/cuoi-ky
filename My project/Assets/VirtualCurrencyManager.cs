@@ -8,9 +8,12 @@ using UnityEngine.SceneManagement;
 public class VirtualCurrencyManager : MonoBehaviour
 {
     public Text coinsText;
+    public Text LogText;
     private int playerCoins = 0;
     private int requiredCoins = 5;
-
+    [SerializeField] InputField bettingCoinsIF;
+    [SerializeField] InputField characterNameIF;
+    
     private void Start()
     {
         // Call this method when the scene loads to retrieve the player's coins
@@ -119,7 +122,28 @@ public class VirtualCurrencyManager : MonoBehaviour
     private void StartMainGame()
     {
         // Load the scene for the main game
-        SceneManager.LoadScene("Set selection");
+        SceneManager.LoadScene("NameAndBetCoin");
+    }
+
+    int bettingCoins;
+    string characterName;
+    private void Betting()
+    {
+        bettingCoins = int.Parse(bettingCoinsIF.text);
+        characterName = characterNameIF.text;
+        SpendCoins(bettingCoins);
+    }
+
+    public void SetSelection()
+    {
+        if (bettingCoinsIF.text != null)
+        {
+            SceneManager.LoadScene("Set selection");
+        }
+        else
+        {
+            Debug.Log("Enter betting coins!");
+            LogText.text = "Enter betting coins";
+        }
     }
 }
-
