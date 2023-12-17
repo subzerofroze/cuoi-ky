@@ -3,7 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Char1
+  - Char4
+  - Char2
+  - Char3
+  - Char5
+  - FinishLine
+  - Set1
+  - Box1
+  - Box2
+  - Box3
+  - Box4
+  - Box5
   layers:
   - Default
   - TransparentFX
