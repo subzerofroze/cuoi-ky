@@ -33,6 +33,12 @@ public class DiChuyen : MonoBehaviour
     {
         TimesArray();
 
+        char1.EncounterAnimation();
+        char2.EncounterAnimation();
+        char3.EncounterAnimation();
+        char4.EncounterAnimation();
+        char5.EncounterAnimation();
+
         Finalranking();
     }
 
@@ -49,9 +55,7 @@ public class DiChuyen : MonoBehaviour
 
         // Sắp xếp mảng tăng dần
         System.Array.Sort(finishTimes);
-
         timesArray = true;
-
     }
 
 
@@ -69,7 +73,7 @@ public class DiChuyen : MonoBehaviour
                 {
                     return 1;
                 }
-                return 0;
+                //return 0;
             }
             // Kiểm tra nếu đối tượng là Char2 thì gọi FinishTime
             else if (character is Char2 char2Instance)
@@ -79,7 +83,7 @@ public class DiChuyen : MonoBehaviour
                 {
                     return 1;
                 }
-                return 0;
+                //return 0;
             }
             else if (character is Char3 char3Instance)
             {
@@ -88,7 +92,7 @@ public class DiChuyen : MonoBehaviour
                 {
                     return 1;
                 }
-                return 0;
+                //return 0;
             }
             else if (character is Char4 char4Instance)
             {
@@ -97,7 +101,7 @@ public class DiChuyen : MonoBehaviour
                 {
                     return 1;
                 }
-                return 0;
+                //return 0;
             }
             else if (character is Char5 char5Instance)
             {
@@ -106,7 +110,7 @@ public class DiChuyen : MonoBehaviour
                 {
                     return 1;
                 }
-                return 0;
+                //return 0;
             }
         }
         return 0;
@@ -144,71 +148,73 @@ public class DiChuyen : MonoBehaviour
     [ContextMenu("Add Text")]
     public void Finalranking()
     {
-        //Vị trí thứ nhất
-        if (finishTimes[0] == char1.FinishTime())
+        if(timesArray)
         {
-            addtext.text = char1.GetName() + " finished in 1st place in " + char1.FinishTime().ToString() + " s";
-        }
-        if (finishTimes[0] == char2.FinishTime())
-        {
-            addtext.text = char2.GetName() + " finished in 1st place in " + char2.FinishTime().ToString() + " s";
-        }
-        if (finishTimes[0] == char3.FinishTime())
-        {
-            addtext.text = char3.GetName() + " finished in 1st place in " + char3.FinishTime().ToString() + " s";
-        }
-        if (finishTimes[0] == char4.FinishTime())
-        {
-            addtext.text = char4.GetName() + " finished in 1st place in " + char4.FinishTime().ToString() + " s";
-        }
-        if (finishTimes[0] == char5.FinishTime())
-        {
-            addtext.text = char5.GetName() + " finished in 1st place in " + char5.FinishTime().ToString() + " s";
-        }
+            //Vị trí thứ nhất
+            if (finishTimes[0] == char1.FinishTime())
+            {
+                addtext.text = char1.GetName() + " finished in 1st place in " + char1.FinishTime().ToString() + " s";
+            }
+            if (finishTimes[0] == char2.FinishTime())
+            {
+                addtext.text = char2.GetName() + " finished in 1st place in " + char2.FinishTime().ToString() + " s";
+            }
+            if (finishTimes[0] == char3.FinishTime())
+            {
+                addtext.text = char3.GetName() + " finished in 1st place in " + char3.FinishTime().ToString() + " s";
+            }
+            if (finishTimes[0] == char4.FinishTime())
+            {
+                addtext.text = char4.GetName() + " finished in 1st place in " + char4.FinishTime().ToString() + " s";
+            }
+            if (finishTimes[0] == char5.FinishTime())
+            {
+                addtext.text = char5.GetName() + " finished in 1st place in " + char5.FinishTime().ToString() + " s";
+            }
 
-        //Vị trí thứ hai
-        if (finishTimes[1] == char1.FinishTime())
-        {
-            addtext.text = addtext.text + "\n" + (char1.GetName() + " finished in 2nd place in " + char1.FinishTime().ToString() + " s");
-        }
-        if (finishTimes[1] == char2.FinishTime())
-        {
-            addtext.text = addtext.text + "\n" + (char2.GetName() + " finished in 2nd place in " + char2.FinishTime().ToString() + " s");
-        }
-        if (finishTimes[1] == char3.FinishTime())
-        {
-            addtext.text = addtext.text + "\n" + (char3.GetName() + " finished in 2nd place in " + char3.FinishTime().ToString() + " s");
-        }
-        if (finishTimes[1] == char4.FinishTime())
-        {
-            addtext.text = addtext.text + "\n" + (char4.GetName() + " finished in 2nd place in " + char4.FinishTime().ToString() + " s");
-        }
-        if (finishTimes[1] == char5.FinishTime())
-        {
-            addtext.text = addtext.text + "\n" + (char5.GetName() + " finished in 2nd place in " + char5.FinishTime().ToString() + " s");
-        }
+            //Vị trí thứ hai
+            if (finishTimes[1] == char1.FinishTime())
+            {
+                addtext.text = addtext.text + "\n" + (char1.GetName() + " finished in 2nd place in " + char1.FinishTime().ToString() + " s");
+            }
+            if (finishTimes[1] == char2.FinishTime())
+            {
+                addtext.text = addtext.text + "\n" + (char2.GetName() + " finished in 2nd place in " + char2.FinishTime().ToString() + " s");
+            }
+            if (finishTimes[1] == char3.FinishTime())
+            {
+                addtext.text = addtext.text + "\n" + (char3.GetName() + " finished in 2nd place in " + char3.FinishTime().ToString() + " s");
+            }
+            if (finishTimes[1] == char4.FinishTime())
+            {
+                addtext.text = addtext.text + "\n" + (char4.GetName() + " finished in 2nd place in " + char4.FinishTime().ToString() + " s");
+            }
+            if (finishTimes[1] == char5.FinishTime())
+            {
+                addtext.text = addtext.text + "\n" + (char5.GetName() + " finished in 2nd place in " + char5.FinishTime().ToString() + " s");
+            }
 
-        //Vị trí thứ ba
-        if (finishTimes[2] == char1.FinishTime())
-        {
-            addtext.text = addtext.text + "\n" + (char1.GetName() + " finished in 3rd place in " + char1.FinishTime().ToString() + " s");
-        }
-        if (finishTimes[2] == char2.FinishTime())
-        {
-            addtext.text = addtext.text + "\n" + (char2.GetName() + " finished in 3rd place in " + char2.FinishTime().ToString() + " s");
-        }
-        if (finishTimes[2] == char3.FinishTime())
-        {
-            addtext.text = addtext.text + "\n" + (char3.GetName() + " finished in 3rd place in " + char3.FinishTime().ToString() + " s");
-        }
-        if (finishTimes[2] == char4.FinishTime())
-        {
-            addtext.text = addtext.text + "\n" + (char4.GetName() + " finished in 3rd place in " + char4.FinishTime().ToString() + " s");
-        }
-        if (finishTimes[2] == char5.FinishTime())
-        {
-            addtext.text = addtext.text + "\n" + (char5.GetName() + " finished in 3rd place in " + char5.FinishTime().ToString() + " s");
-        }
+            //Vị trí thứ ba
+            if (finishTimes[2] == char1.FinishTime())
+            {
+                addtext.text = addtext.text + "\n" + (char1.GetName() + " finished in 3rd place in " + char1.FinishTime().ToString() + " s");
+            }
+            if (finishTimes[2] == char2.FinishTime())
+            {
+                addtext.text = addtext.text + "\n" + (char2.GetName() + " finished in 3rd place in " + char2.FinishTime().ToString() + " s");
+            }
+            if (finishTimes[2] == char3.FinishTime())
+            {
+                addtext.text = addtext.text + "\n" + (char3.GetName() + " finished in 3rd place in " + char3.FinishTime().ToString() + " s");
+            }
+            if (finishTimes[2] == char4.FinishTime())
+            {
+                addtext.text = addtext.text + "\n" + (char4.GetName() + " finished in 3rd place in " + char4.FinishTime().ToString() + " s");
+            }
+            if (finishTimes[2] == char5.FinishTime())
+            {
+                addtext.text = addtext.text + "\n" + (char5.GetName() + " finished in 3rd place in " + char5.FinishTime().ToString() + " s");
+            }
+        }    
     }
-
 }
