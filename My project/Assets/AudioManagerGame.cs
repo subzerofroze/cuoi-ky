@@ -1,10 +1,10 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class AudioManager : MonoBehaviour
+public class AudioManagerGame : MonoBehaviour
 {
-    private static AudioManager instance;
+    private static AudioManagerGame instance;
     private AudioSource audioSource;
     private float defaultVolume = 1f; // Set your default volume here
 
@@ -26,11 +26,12 @@ public class AudioManager : MonoBehaviour
     private void Update()
     {
         // Check if the current scene is the Settings scene
-        if (SceneManager.GetActiveScene().name == "NameAndBetCoin")
+        if (SceneManager.GetActiveScene().name == "Settings")
         {
             Destroy(gameObject); // Destroy AudioManager in the Settings scene
         }
     }
+
     // Play background music
     public void PlayMusic(AudioClip musicClip)
     {
