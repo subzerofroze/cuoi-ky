@@ -55,7 +55,9 @@ public class DiChuyen : MonoBehaviour
 
         // Sắp xếp mảng tăng dần
         System.Array.Sort(finishTimes);
-        timesArray = true;
+        if (finishTimes[0] != 0) {
+            timesArray = true;
+        }
     }
 
 

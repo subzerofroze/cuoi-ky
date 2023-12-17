@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Char3 : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class Char3 : MonoBehaviour
     public BoxCollider2D Cchar3;
 
     public Animator animator;
+
+    public Text addtext;
 
     public float minSpeed = 125f;
     public float maxSpeed = 150f;
@@ -164,21 +167,21 @@ public class Char3 : MonoBehaviour
         {
             case 1:
                 Debug.Log("Slow down for 3 seconds.");
-                diChuyen.addtext.text = GetName() + " got slow down for 3 seconds.";
+                addtext.text = GetName() + " got slow down for 3 seconds.";
                 randomSpeed /= 2; // Slow down the speed
                 yield return new WaitForSeconds(3f);
                 randomSpeed *= 2;
                 break;
             case 2:
                 Debug.Log("Speed up for 3 seconds.");
-                diChuyen.addtext.text = GetName() + " got speed up for 3 seconds.";
+                addtext.text = GetName() + " got speed up for 3 seconds.";
                 randomSpeed *= 2; // Speed up the speed
                 yield return new WaitForSeconds(3f);
                 randomSpeed /= 2;
                 break;
             case 3:
                 Debug.Log("Sudden stop for 3 seconds.");
-                diChuyen.addtext.text = GetName() + " got sudden stop for 3 seconds.";
+                addtext.text = GetName() + " got sudden stop for 3 seconds.";
                 float temp = randomSpeed;
                 randomSpeed = 0f; //Stop the character
                 animator.enabled = false; //Stop the animation
@@ -187,7 +190,7 @@ public class Char3 : MonoBehaviour
                 break;
             case 4:
                 Debug.Log("Teleport forward 10 meters.");
-                diChuyen.addtext.text = GetName() + " move forward 3 meters.";
+                addtext.text = GetName() + " move forward 3 meters.";
                 Transform Char3transform = transform;
                 Vector2 Char3position = Char3transform.position;
                 float xPosition = Char3position.x;
@@ -199,7 +202,7 @@ public class Char3 : MonoBehaviour
 
             case 5:
                 Debug.Log("Teleport backward 10 meters.");
-                diChuyen.addtext.text = GetName() + " move backward 3 meters.";
+                addtext.text = GetName() + " move backward 3 meters.";
                 Char3transform = transform;
                 Char3position = Char3transform.position;
                 xPosition = Char3position.x;
@@ -210,7 +213,7 @@ public class Char3 : MonoBehaviour
                 yield break;
             case 6:
                 Debug.Log("Teleport backward to start line.");
-                diChuyen.addtext.text = GetName() + " move backward to start line.";
+                addtext.text = GetName() + " move backward to start line.";
                 Char3transform = transform;
                 Char3position = Char3transform.position;
                 Char3position.x = startLine.position.x + 25f; // Teleport backward startLine
@@ -254,7 +257,7 @@ public class Char3 : MonoBehaviour
                 if (randomValue2 >= 90)
                 {
                     Debug.Log("Teleport to finished line.");
-                    diChuyen.addtext.text = GetName() + " teleport to finished line.";
+                    addtext.text = GetName() + " teleport to finished line.";
                     Transform Char3transform = transform;
                     Vector2 Char3position = Char3transform.position;
                     Char3position.x = finishLine.position.x - 25f; //Nhảy đến vạch đích và dừng chuyển động
@@ -269,7 +272,7 @@ public class Char3 : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
 
-            float randomTime = Random.Range(4f, 7f);
+            float randomTime = Random.Range(6f, 7f);
 
             // Check if a few seconds have passed before encountering an animation
             if (elapsedTime >= randomTime)
