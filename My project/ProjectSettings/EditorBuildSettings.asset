@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Set 1 Main Game.unity
     guid: 12791d89a24336540bebd05938001718
   - enabled: 1
+    path: Assets/Scenes/Set 2 MainGame.unity
+    guid: fd7394b95059db047ae7ce886a237968
+  - enabled: 1
+    path: Assets/Scenes/Set 3 MainGame.unity
+    guid: a37d3b08551fd5d4f9dd8356f363eb75
+  - enabled: 1
     path: Assets/Scenes/Set 4 Main Game.unity
     guid: 1ecb18bd55da17341994be1bc048f370
   - enabled: 1

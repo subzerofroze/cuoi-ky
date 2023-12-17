@@ -129,9 +129,10 @@ public class VirtualCurrencyManager : MonoBehaviour
     string characterName;
     private void Betting()
     {
-        bettingCoins = int.Parse(bettingCoinsIF.text);
+        int.TryParse(bettingCoinsIF.text, out int bettingCoins);
         characterName = characterNameIF.text;
-        SpendCoins(bettingCoins);
+        playerCoins -= bettingCoins;
+        UpdatePlayerCoins();
     }
 
     public void SetSelection()
@@ -145,5 +146,5 @@ public class VirtualCurrencyManager : MonoBehaviour
             Debug.Log("Enter betting coins!");
             LogText.text = "Enter betting coins";
         }
-    }
+    }   
 }
